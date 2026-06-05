@@ -25,7 +25,6 @@ def calculate_strike_rate(state: BatsmanState):
 
 def calculate_ball_per_boundary(state: BatsmanState):
     bpb = state["balls"]/(state["fours"] + state["sixes"]) 
-    state["ball_per_boundary"] = bpb
     return {"ball_per_boundary": bpb}
 
 def calculate_boundary_percent(state: BatsmanState):
